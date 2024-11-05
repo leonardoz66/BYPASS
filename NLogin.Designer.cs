@@ -44,10 +44,9 @@
             this.siticonePanel2 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
             this.siticonePanel3 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
             this.siticonePictureBox3 = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.siticonePictureBox2 = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
             this.siticonePictureBox1 = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.guna2CheckBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
             this.siticonePanel2.SuspendLayout();
             this.siticonePanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox3)).BeginInit();
@@ -68,9 +67,9 @@
             this.siticoneButton1.DisabledState.FillColor = System.Drawing.Color.Maroon;
             this.siticoneButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.siticoneButton1.DisabledState.Parent = this.siticoneButton1;
-            this.siticoneButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.siticoneButton1.FillColor = System.Drawing.Color.Maroon;
             this.siticoneButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 8.5F, System.Drawing.FontStyle.Bold);
-            this.siticoneButton1.ForeColor = System.Drawing.Color.Black;
+            this.siticoneButton1.ForeColor = System.Drawing.Color.Gainsboro;
             this.siticoneButton1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.siticoneButton1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.siticoneButton1.HoverState.Parent = this.siticoneButton1;
@@ -81,7 +80,7 @@
             this.siticoneButton1.ShadowDecoration.Parent = this.siticoneButton1;
             this.siticoneButton1.Size = new System.Drawing.Size(245, 27);
             this.siticoneButton1.TabIndex = 5;
-            this.siticoneButton1.Text = "Login";
+            this.siticoneButton1.Text = "Log In";
             this.siticoneHtmlToolTip1.SetToolTip(this.siticoneButton1, "Login Here");
             this.siticoneButton1.Click += new System.EventHandler(this.siticoneButton1_Click);
             // 
@@ -181,11 +180,11 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 8.5F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(176, 250);
+            this.label2.Location = new System.Drawing.Point(169, 254);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 15);
+            this.label2.Size = new System.Drawing.Size(86, 15);
             this.label2.TabIndex = 8;
-            this.label2.Text = "Novo Usuario";
+            this.label2.Text = "Create account";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // siticoneBorderlessForm1
@@ -252,6 +251,18 @@
             this.siticonePictureBox3.TabStop = false;
             this.siticonePictureBox3.UseTransparentBackground = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label1.Location = new System.Drawing.Point(286, 375);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(127, 19);
+            this.label1.TabIndex = 39;
+            this.label1.Text = "discord.gg/leaksgg";
+            // 
             // siticonePictureBox2
             // 
             this.siticonePictureBox2.BackColor = System.Drawing.Color.Transparent;
@@ -280,33 +291,13 @@
             this.siticonePictureBox1.TabStop = false;
             this.siticonePictureBox1.UseTransparentBackground = true;
             // 
-            // guna2CheckBox1
-            // 
-            this.guna2CheckBox1.AutoSize = true;
-            this.guna2CheckBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CheckBox1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox1.CheckedState.BorderRadius = 0;
-            this.guna2CheckBox1.CheckedState.BorderThickness = 0;
-            this.guna2CheckBox1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox1.ForeColor = System.Drawing.Color.Snow;
-            this.guna2CheckBox1.Location = new System.Drawing.Point(597, 38);
-            this.guna2CheckBox1.Name = "guna2CheckBox1";
-            this.guna2CheckBox1.Size = new System.Drawing.Size(89, 17);
-            this.guna2CheckBox1.TabIndex = 32;
-            this.guna2CheckBox1.Text = "Stream Mode";
-            this.guna2CheckBox1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CheckBox1.UncheckedState.BorderRadius = 0;
-            this.guna2CheckBox1.UncheckedState.BorderThickness = 0;
-            this.guna2CheckBox1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CheckBox1.UseVisualStyleBackColor = false;
-            // 
             // NLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.ClientSize = new System.Drawing.Size(698, 402);
-            this.Controls.Add(this.guna2CheckBox1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.siticonePanel3);
             this.Controls.Add(this.siticonePanel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -343,8 +334,7 @@
         private Siticone.Desktop.UI.WinForms.SiticonePictureBox siticonePictureBox2;
         private Siticone.Desktop.UI.WinForms.SiticonePanel siticonePanel3;
         private Siticone.Desktop.UI.WinForms.SiticonePictureBox siticonePictureBox3;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
 

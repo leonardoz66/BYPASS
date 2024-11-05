@@ -29,8 +29,8 @@ namespace ag.Others
 
         public static api KeyAuthApp = new api(
            name: "bypass", // Application Name
-    ownerid: "3WZuYsZRle", // Owner ID
-    secret: "309ce822c81250dc8eb99d036988fb2b26cf1dcc13e74b2375c011cfc64c002e", // Application Secret
+    ownerid: "FJPiECcyZ7", // Owner ID
+    secret: "28d16a6ed81fcceca6d7e3c1bd0f0635ae87a0b673b276595e52622969bbe6b5", // Application Secret
     version: "1.0"
         );
         [DllImport("user32.dll", SetLastError = true)]

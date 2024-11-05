@@ -52,7 +52,7 @@
             // 
             this.lblMsg.AutoSize = true;
             this.lblMsg.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblMsg.ForeColor = System.Drawing.Color.Transparent;
+            this.lblMsg.ForeColor = System.Drawing.Color.Gray;
             this.lblMsg.Location = new System.Drawing.Point(7, 30);
             this.lblMsg.Name = "lblMsg";
             this.lblMsg.Size = new System.Drawing.Size(103, 19);
@@ -77,17 +77,17 @@
             // 
             this.msg.AutoSize = true;
             this.msg.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.msg.ForeColor = System.Drawing.Color.White;
+            this.msg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.msg.Location = new System.Drawing.Point(21, 9);
             this.msg.Name = "msg";
-            this.msg.Size = new System.Drawing.Size(82, 19);
+            this.msg.Size = new System.Drawing.Size(85, 19);
             this.msg.TabIndex = 9;
-            this.msg.Text = "Notificação";
+            this.msg.Text = "Notification";
             this.msg.Click += new System.EventHandler(this.msg_Click);
             // 
             // siticonePanel1
             // 
-            this.siticonePanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.siticonePanel1.BackColor = System.Drawing.Color.Maroon;
             this.siticonePanel1.Location = new System.Drawing.Point(0, 55);
             this.siticonePanel1.Name = "siticonePanel1";
             this.siticonePanel1.ShadowDecoration.Parent = this.siticonePanel1;
@@ -98,8 +98,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(131, 63);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.ClientSize = new System.Drawing.Size(338, 62);
             this.Controls.Add(this.siticonePanel1);
             this.Controls.Add(this.lblMsg);
             this.Controls.Add(this.siticonePictureBox1);

@@ -151,7 +151,7 @@ namespace ag.Forms
 
             this.Show();
             this.action = enmAction.start;
-            this.timer1.Interval = 2;
+            this.timer1.Interval = 5;
             this.timer1.Start();
         }
     }

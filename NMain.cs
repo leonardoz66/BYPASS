@@ -1,5 +1,4 @@
-﻿using Guna.UI2.WinForms;
-using ag.Class;
+﻿using ag.Class;
 using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
@@ -1194,21 +1193,6 @@ namespace ag.Forms
 
 
             this.Close();
-        }
-     
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
         }
     }
     }

@@ -51,6 +51,7 @@
             this.siticonePictureBox1 = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
             this.siticonePanel2 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
             this.siticoneControlBox2 = new Siticone.Desktop.UI.WinForms.SiticoneControlBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.siticonePanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox2)).BeginInit();
@@ -175,9 +176,9 @@
             this.siticoneButton2.DisabledState.FillColor = System.Drawing.Color.Maroon;
             this.siticoneButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.siticoneButton2.DisabledState.Parent = this.siticoneButton2;
-            this.siticoneButton2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.siticoneButton2.FillColor = System.Drawing.Color.Maroon;
             this.siticoneButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 8.5F, System.Drawing.FontStyle.Bold);
-            this.siticoneButton2.ForeColor = System.Drawing.Color.Black;
+            this.siticoneButton2.ForeColor = System.Drawing.Color.Gainsboro;
             this.siticoneButton2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.siticoneButton2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.siticoneButton2.HoverState.Parent = this.siticoneButton2;
@@ -188,7 +189,7 @@
             this.siticoneButton2.ShadowDecoration.Parent = this.siticoneButton2;
             this.siticoneButton2.Size = new System.Drawing.Size(245, 27);
             this.siticoneButton2.TabIndex = 19;
-            this.siticoneButton2.Text = "Registrar";
+            this.siticoneButton2.Text = "Register In";
             this.siticoneHtmlToolTip1.SetToolTip(this.siticoneButton2, "Login Here");
             this.siticoneButton2.Click += new System.EventHandler(this.siticoneButton2_Click);
             // 
@@ -237,12 +238,12 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 8.5F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(161, 252);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label3.Location = new System.Drawing.Point(141, 254);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 15);
+            this.label3.Size = new System.Drawing.Size(142, 15);
             this.label3.TabIndex = 20;
-            this.label3.Text = "Já tem uma conta?";
+            this.label3.Text = "Already have an account?";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // siticoneBorderlessForm1
@@ -357,12 +358,25 @@
             this.siticoneControlBox2.Size = new System.Drawing.Size(24, 24);
             this.siticoneControlBox2.TabIndex = 11;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label4.Location = new System.Drawing.Point(286, 375);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(127, 19);
+            this.label4.TabIndex = 41;
+            this.label4.Text = "discord.gg/leaksgg";
+            // 
             // NRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.ClientSize = new System.Drawing.Size(698, 402);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.siticonePanel2);
             this.Controls.Add(this.siticoneControlBox1);
             this.Controls.Add(this.siticonePanel3);
@@ -380,6 +394,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox1)).EndInit();
             this.siticonePanel2.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -402,6 +417,7 @@
         private Siticone.Desktop.UI.WinForms.SiticonePictureBox siticonePictureBox3;
         private Siticone.Desktop.UI.WinForms.SiticoneControlBox siticoneControlBox2;
         private Siticone.Desktop.UI.WinForms.SiticonePanel siticonePanel2;
+        private System.Windows.Forms.Label label4;
         private Siticone.Desktop.UI.WinForms.SiticonePictureBox siticonePictureBox4;
         private Siticone.Desktop.UI.WinForms.SiticonePictureBox siticonePictureBox2;
         private Siticone.Desktop.UI.WinForms.SiticonePictureBox siticonePictureBox1;

